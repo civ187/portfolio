@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color:#fce138;
+    --secondary-color: #024e76;
+    --tertiary-color: #39a6b2;
+
+}
+
+body {    
+    color: var(--secondary-color);
+    font-family: helvetica, Arial, sans-serif;
+}
+
+header {    
+    padding: 20px 35px;
+    background-color: var(--tertiary-color);
+    background-image: url("../images/KingKong.jpg");
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+
+}
