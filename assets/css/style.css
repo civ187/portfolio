@@ -5,21 +5,20 @@
 }
 
 :root {
-    --primary-color:#fce138;
-    --secondary-color: #024e76;
-    --tertiary-color: #39a6b2;
+    --color_1: #000000;
+    --color_2: #ffffff;
+    --color_3: #006dd3;
 
 }
 
 body {    
-    color: var(--secondary-color);
+    color: var(--color_1);
     font-family: helvetica, Arial, sans-serif;
 }
 
 header {    
-    padding: 20px 35px;
-    background-color: var(--tertiary-color);
-    background-image: url("../images/KingKong.jpg");
+    padding: 30px;
+    background-color: var(--color_3);
     background-size: cover;
     background-position: 80%;
     background-attachment: fixed;
@@ -30,5 +29,172 @@ header {
     position: sticky;
     top: 0;
     z-index: 9999;
+}
 
+header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    color: var(--color_1);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);    
+}
+
+header a { 
+    text-decoration: none;
+    color: var(--color_1);
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a{
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);   
+}
+
+header nav ul li a:hover{  
+    background: var(--color_1);
+    color: var(--color_2);
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+.hero {
+    background-image: url("../images/KingKong.jpg");
+    background-size: cover;
+    background-position: 100%;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.hero-port {
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.hero-port h2 {
+    font-style: italic;
+    font-size: 40px;
+    color: var(--primary-color);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    background-color: var(--color_3);
+    padding: 20px;
+}
+.hero-img {
+    flex: 1 20%;
+    margin: 30px;
+}
+
+.hero-img img {
+    max-width: 15%;
+}
+
+.title {
+    width: 35%;
+    text-align: left;
+    margin: 3.5%;
+    font-size: 25px;
+    line-height: 1.2;
+}
+
+.bio {
+    margin: 50px;
+}
+
+.grid-container-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.grid-container {
+    background: var(--color_2);
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px 20px;
+    color: var(--color_3);
+    font-size: 1.2rem;
+  }
+
+.grid-container-border {
+    border: 5px solid var(--color_1); 
+}  
+
+.grid-item {
+    padding: 13px;
+    border: 5px solid var(--color_3);
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+    
+.Space_01 { grid-area: 1 / 1 / 3 / 3;}
+  
+.Space_02 { grid-area: 1 / 3 / 3 / 5;}
+  
+.Space_03 { grid-area: 1 / 5 / 3 / 7;}
+  
+.Space_04 { grid-area: 3 / 1 / 5 / 3;}
+  
+.Space_05 { grid-area: 3 / 3 / 5 / 5;}
+  
+.Space_06 { grid-area: 3 / 5 / 5 / 7;}
+  
+
+
+footer {
+    background: var(--color_3);
+    width: 100%;
+    padding: 40px 35px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer div ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+footer div ul li a{
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);   
+}
+footer a {
+    color: var(--color_1);
+    text-decoration: none;
+}
+
+footer div ul li a:hover{  
+    background: var(--color_1);
+    color: var(--color_2);
+    border-radius: 15px;
+    text-shadow: none;
 }
