@@ -71,7 +71,7 @@ header nav ul li a:hover{
 }
 
 .hero {
-    background-image: url("../images/KingKong.jpg");
+    background-image: url("../images/milky-way.jpg");
     background-size: cover;
     background-position: 100%;
     background-attachment: fixed;
@@ -99,30 +99,31 @@ header nav ul li a:hover{
     padding: 20px;
 }
 .hero-img {
-    flex: 1 20%; 
-    margin: 20px;
-    /* border-radius: 50%;     */
+    padding-right: 8%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    align-self: center;
 }
 
 .hero-img img {
-    max-width: 150px;
-    border-radius: 50%;
+    max-width: 250px;
+    border-radius: 30%;
     box-shadow: 5px 5px 15px 5px #000000;
 }
 
 .title {
     width: 60%;
     text-align: left;
-    margin: 3.5%;
+    margin: 20px;
     font-size: 25px;
-    line-height: 1.2;
+    line-height: 1.5;
 }
 
-.bio {
+/* .bio {
     margin: 3.5%;
     width: 50%;
     text-align: left;
-}
+} */
 
 .grid-container-wrapper {
     display: flex;
